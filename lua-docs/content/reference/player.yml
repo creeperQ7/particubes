@@ -61,7 +61,10 @@ functions:
           type: "Item"
       samples:
         - code: |
-            Import("aduermael.rainbow_sword")
+            Config = {
+    Map = "aduermael.hills",
+    Items = {"aduermael.rainbow_sword"}
+}
 
-            Player:Give(R.aduermael.rainbow_sword)
+            Player:Give(Items.aduermael.rainbow_sword)
 
